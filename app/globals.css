@@ -7,7 +7,7 @@
 }
 
 body {
-  @apply bg-neutralbg text-slate-900 antialiased;
+  @apply bg-slate-50 text-slate-900 antialiased;
 }
 
 .container-page {
@@ -15,9 +15,9 @@ body {
 }
 
 .section-title {
-  @apply text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl;
+  @apply text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl;
 }
 
 .section-subtitle {
-  @apply mt-3 max-w-3xl text-sm leading-7 text-slate-600 sm:text-base;
+  @apply mt-2 max-w-3xl text-sm leading-7 text-slate-600 sm:text-base;
 }

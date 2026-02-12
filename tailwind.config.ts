@@ -8,22 +8,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: '#eef4ff',
-          100: '#dce9ff',
-          500: '#1d4ed8',
-          600: '#1e40af',
-          700: '#1e3a8a',
-          900: '#0b1f4d',
+        brand: {
+          50: '#eef8ff',
+          100: '#d9efff',
+          500: '#0369a1',
+          700: '#075985',
+          900: '#0c4a6e',
         },
-        neutralbg: '#f6f8fb',
       },
       boxShadow: {
-        soft: '0 8px 24px rgba(15, 23, 42, 0.06)',
-        card: '0 12px 32px rgba(2, 12, 27, 0.08)',
-      },
-      backgroundImage: {
-        'hero-gradient': 'linear-gradient(140deg, #0b1f4d 0%, #1e3a8a 40%, #1d4ed8 100%)',
+        card: '0 8px 24px rgba(15, 23, 42, 0.08)',
       },
     },
   },
