@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
-import { CtaBanner } from '@/components/cta-banner';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://example.com'),
@@ -25,7 +24,6 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col">
           <SiteHeader />
           <main className="flex-1">{children}</main>
-          <CtaBanner />
           <SiteFooter />
         </div>
       </body>

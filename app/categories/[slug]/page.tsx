@@ -31,17 +31,17 @@ export default function CategoryPage({ params }: CategoryPageProps) {
   }
 
   return (
-    <section className="container-page py-12 sm:py-14 lg:py-16">
+    <section className="container-page py-12 sm:py-16">
       <h1 className="section-title">{category.name}</h1>
       <p className="section-subtitle">{category.description}</p>
-      <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {category.sampleProducts.map((product, index) => (
-          <article key={`${product.name}-${index}`} className="rounded-card border border-border bg-bg-surface p-4 shadow-soft sm:p-5">
-            <div className="flex aspect-video items-center justify-center rounded-brand bg-bg-soft text-xs font-semibold text-text-muted">
+          <article key={`${product.name}-${index}`} className="rounded-xl border border-slate-200 bg-white p-4 shadow-card">
+            <div className="flex aspect-video items-center justify-center rounded-lg bg-slate-100 text-xs font-medium text-slate-500">
               תמונת מוצר
             </div>
-            <h2 className="mt-4 text-base font-bold text-text-primary">{product.name}</h2>
-            {product.note ? <p className="mt-2 text-sm text-text-secondary">{product.note}</p> : null}
+            <h2 className="mt-4 text-base font-bold text-slate-900">{product.name}</h2>
+            {product.note ? <p className="mt-2 text-sm text-slate-600">{product.note}</p> : null}
           </article>
         ))}
       </div>
